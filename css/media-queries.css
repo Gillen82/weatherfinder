@@ -1,0 +1,126 @@
+/* phones */
+@media only screen and (min-width: 480px) {
+	:root {
+		font-size: 16px;
+	}
+
+	.container {
+		width: 95%;
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	h1 {
+		margin-top: 1rem;
+		font-size: 2rem;
+	}
+
+	form label {
+		text-align: center;
+		font-size: 0.8rem;
+	}
+
+	form {
+		gap: 0.5rem;
+		margin-top: 1rem;
+	}
+
+	.form-input {
+		width: 90%;
+		padding: 0.4rem;
+		font-size: 1.3rem;
+	}
+
+	.card {
+		margin-top: 1rem;
+		box-shadow: none;
+	}
+
+	.icon {
+		margin-bottom: -90px;
+	}
+
+	.details {
+		margin: 0;
+		padding: 2rem 0 4rem;
+		gap: 1rem;
+	}
+
+	.city-name {
+		font-size: 1.2rem;
+	}
+
+	.weather-condition {
+		text-transform: uppercase;
+		font-size: 1rem;
+	}
+
+	.temp {
+		font-size: 2rem;
+	}
+}
+
+/* tablets */
+@media only screen and (min-width: 620px) {
+	:root {
+		font-size: 18px;
+	}
+
+	.container {
+		width: 95%;
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	h1 {
+		margin-top: 1rem;
+		font-size: 2rem;
+	}
+
+	form label {
+		text-align: center;
+		font-size: 0.8rem;
+	}
+
+	form {
+		gap: 0.5rem;
+		margin-top: 1rem;
+	}
+
+	.form-input {
+		width: 90%;
+		padding: 0.4rem;
+		font-size: 1.3rem;
+	}
+
+	.card {
+		margin-top: 1rem;
+		box-shadow: none;
+	}
+
+	.icon {
+		margin-bottom: -90px;
+	}
+
+	.details {
+		margin: 0;
+		padding: 2rem 0 4rem;
+		gap: 1rem;
+	}
+
+	.city-name {
+		font-size: 1.2rem;
+	}
+
+	.weather-condition {
+		text-transform: uppercase;
+		font-size: 1rem;
+	}
+
+	.temp {
+		font-size: 2rem;
+	}
+}
+/* laptops */
+
+/* desktop */

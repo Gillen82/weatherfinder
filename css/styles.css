@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+:root {
+	font-size: 20px;
+}
+
+body {
+	background-color: #eeefde;
+	color: #777;
+	line-height: 1.5;
+	letter-spacing: 0.1rem;
+}
+
+.container {
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 0.8em;
+}
+
+.main-header {
+	grid-column: 2/12;
+	z-index: 1;
+}
+
+h1 {
+	color: #777;
+}
+
+form {
+	width: 100%;
+}
+
+form label {
+	font-size: 0.8rem;
+}
+
+.form-input {
+	width: 100%;
+	padding: 0.3rem;
+	text-align: center;
+	outline: none;
+	color: #333;
+	font-size: 1.2rem;
+}
+
+.card {
+	grid-column: 1/13;
+	text-align: center;
+	background-color: #fff;
+	color: #777;
+}
+
+.time {
+	width: 100%;
+}
+
+.icon {
+	background-color: #fff;
+	width: 100px;
+	border-radius: 50%;
+	position: relative;
+	top: -60px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: -70px;
+}
+
+.details {
+	margin: 0.5rem 0;
+	padding: 0.5rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.city-name {
+	text-transform: uppercase;
+	font-size: 1rem;
+}
+
+.weather-condition {
+	text-transform: uppercase;
+	font-size: 0.7rem;
+}
+
+.hidden {
+	display: none;
+}
+
+/* mobile styles */
+h1 {
+	font-size: 1.3rem;
+	grid-column: 1/13;
+	padding: 1rem 0;
+	margin-bottom: -1rem;
+}
+
+form {
+	grid-column: 2/12;
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	margin-top: 1rem;
+	z-index: 1;
+}
+
+form label {
+	grid-column: 1/13;
+	margin-bottom: 0.5rem;
+}
+
+input {
+	grid-column: 1/13;
+	margin-bottom: 1rem;
+}
+
+.card {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.icon {
+	margin-bottom: -70px;
+}
+
+.city-name {
+	font-size: 1.3rem;
+}
+
+.weather-condition {
+	font-size: 1.1rem;
+}
+
+.temp {
+	font-size: 1.6rem;
+}
+
+/* tablets small */
+@media screen and (min-width: 620px) {
+	:root {
+		font-size: 22px;
+	}
+
+	h1 {
+		font-size: 1.6rem;
+		margin: 1rem 0 -1rem;
+	}
+
+	form {
+		grid-column: 3/11;
+		grid-row: 2;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		margin-top: 1rem;
+	}
+
+	form label {
+		font-size: 1rem;
+	}
+
+	input {
+		grid-column: 1/13;
+		margin-bottom: 1rem;
+	}
+
+	.card {
+		grid-column: 3/11;
+		position: static;
+		box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+	}
+
+	.icon {
+		margin-bottom: -70px;
+	}
+
+	.city-name {
+		font-size: 1.3rem;
+	}
+
+	.weather-condition {
+		font-size: 1.1rem;
+	}
+
+	.temp {
+		font-size: 1.6rem;
+	}
+}
+
+/* tablets medium */
+@media screen and (min-width: 960px) {
+	:root {
+		font-size: 24px;
+	}
+
+	.container {
+		display: flex;
+	}
+
+	.main-header {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	h1 {
+		font-size: 1.4rem;
+		margin: -3rem 0 -1rem;
+	}
+
+	form label {
+		font-size: 1rem;
+	}
+
+	input {
+		grid-column: 2/12;
+	}
+
+	.card {
+		width: 50%;
+	}
+}
+
+/* laptops */
+@media screen and (min-width: 1024px) {
+	:root {
+		font-size: 22px;
+	}
+
+	html,
+	body {
+		height: 100%;
+	}
+
+	.container {
+		display: flex;
+		height: 100%;
+	}
+
+	.main-header {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	h1 {
+		font-size: 1.2rem;
+		margin: 0rem 0 -1rem;
+	}
+
+	form {
+		width: 60%;
+		margin: 50px auto;
+	}
+
+	input {
+		grid-column: 1/13;
+		margin-bottom: 1rem;
+	}
+
+	.card {
+		width: 50%;
+		padding: 2em;
+	}
+
+	.time {
+		height: 50%;
+	}
+
+	.icon {
+		margin-bottom: -70px;
+	}
+
+	.city-name {
+		font-size: 1rem;
+	}
+
+	.weather-condition {
+		font-size: 1.1rem;
+	}
+
+	.temp {
+		font-size: 1.6rem;
+	}
+}
